@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/game.css">
+</head>
+
+<body id ="body">
+
+  <div class="game-container">
+    <div id="game" class="flex-column">
+      <!-- Progressbar -->
+      <div id="question-section">
+        <div class="question-status">
+          <p id="progress-text" class="text-prefix">Question</p>
+          <div id="progressbar">
+            <div id="progressbar-full"></div>
+          </div>
+        </div>
+        <!-- Score -->
+        <div id="score-count">
+          <p class="text-prefix">Score</p>
+          <h2 class="score-text" id="score">0</h2>
+        </div>
+      </div>
+
+      <!-- Question -->
+      <h2 id="question">What is incorrect about the code block?</h2>
+      <div class="answer-container">
+        <p class="answer" data-number="1">The for loop expressions are out of order.</p>
+      </div>
+      <div class="answer-container">
+        <p class="answer" data-number="2">The condition of the loop should be separated by semicolons, not commas.</p>
+      </div>
+      <div class="answer-container">
+        <p class="answer" data-number="3">i++ should be i = i + 1.</p>
+      </div>
+      <div class="answer-container">
+        <p class="answer" data-number="4">let is not needed for the start condition.</p>
+      </div>
+
+    </div>
+  </div>
+  <script src="/js/game.js"></script>
+</body>
+
+</html>
