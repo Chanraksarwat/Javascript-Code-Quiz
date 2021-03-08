@@ -1,81 +1,84 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 
+:root {
+  background-color: ;
 }
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'ABeeZee', 'sans serif';
 }
 
-body {
-  background-color: #10162F;
-  color: #ececec;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
+a {
+  text-decoration: none;
 }
 
-.heading-container {
-  display: flex;
-  background-color: #141C3A;
-  padding: 10px 50px;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
+h1 {
+  font-size: 5.4rem;
+  color: #333;
+  margin-bottom: 5rem;
 }
 
-header .testBar {
-  display: flex;
-  align-items: center;
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
 }
 
-header .progress {
-  width: 300px;
-  height: 10px;
-  background-color: #1557FF;
-  border: none;
-  border-radius: 30px;
-  margin-left: 10px;
-}
-/* Question Section */
-#question_container {
-  max-width: 900px;
-  margin: auto;
-}
-
-#question_container h1 {
-  padding: 20px 0;
-}
-
-#question_container .multi_choices p {
-  padding: 15px;
-  margin: 15px 0px;
-  border: .5px solid #3069F0;
-  border-radius: 3px;
-}
-
-
-
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #141C3A;
-  position: absolute;
-  bottom: 0px;
+img {
   width: 100%;
 }
 
-footer p {
-  padding: 20px;
-  font-size: 40px;
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 70rem;
+  margin: 0 auto;
 }
 
-footer .hand_clap2 {
-  display:none ;
+.container .welcome_img {
+  padding: 10rem;
 }
 
-footer span {
-  font-size: 16px;
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 2rem 0;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: #26eca1;
+  color: #F8FFF8;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+btn[disabled]:hover {
+  cursor:not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#high-score {
+  background: #F8FFF8;
+  color: #26eca1;
+  border: 3px solid #26eca1;
 }
