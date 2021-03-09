@@ -1,6 +1,6 @@
 # Javascript-Code-Quiz
 
-#Live Demo
+# Live Demo
 https://chanraksarwat.github.io/Javascript-Code-Quiz/
 
 # Objective
