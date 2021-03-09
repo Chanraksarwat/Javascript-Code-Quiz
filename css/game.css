@@ -3,12 +3,14 @@
   color: #F8FFF8;
 }
 
-.game-container {
+.container {
   margin: 0rem 5rem 5rem;
 }
 
-.answer-container {
+.choice-container {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   margin-bottom: 1.5rem;
   padding: 20px;
   width: 100%;
@@ -19,15 +21,19 @@
   max-width: 110rem;
 }
 
-.answer-container:hover {
+.choice-container:hover {
   cursor: pointer;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.answer-container span {
-  color: #2F4858;
-  font-size: 1.5rem;
+.choice-prefix {
+  padding: 2rem 2.5rem;
 }
+
+.choice-text {
+  padding: 2rem;
+}
+
 .correct {
   background-color: #58D179;
   border: 2px solid #F8FFF8 ;
@@ -39,33 +45,38 @@
 }
 
 /* Header of the Game Page */
-#question-section {
-  width: 100%;
+#hud {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.text-prefix {
+.hud-prefix {
   text-align: center;
   font-size: 2rem;
 }
 
-#progressbar {
-  background-color: #F8FFF8; 
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  background-color: rgb(39, 236, 161);
+  border: .3rem solid rgb(248, 255, 248);
   width: 20rem;
-  height: .5rem;
-  border-radius: 1rem;
-  margin-top: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  margin-top: 2rem;
   overflow: hidden;
 }
 
-#progresbar-full {
+#progressBarFull {
   height: 100%;
-  background-color: #01A0FA;
-  width: 0%;
+  background-color: rgb(248, 255, 248);
+  width: 0%; 
 }
 
-#score-count {
-  margin-top: 5rem;
+@media screen and (max-width: 768px) {
+  .choice-container {
+    width: 40rem;
+  }
 }

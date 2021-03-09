@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form class="end-form-container">
+      <h1 id="finalScore">0</h1>
+      <div id="end" class="flex-center flex-column">
+        <h2 id="end-text">Enter name below to save your score</h3>
+      </div>
+      <input type="text" name="name" id="username" placeholder="Enter your name">
+      <button class="btn" id="saveScoreBtn" type="submit" onClick="saveHighScore(event)" disabled>SAVE</button>
+      </button>
+      <a href="./index.html"class="btn">GO HOME</a>
+    </form>
+  </div>
+  <script src="./js/finish.js"></script>
+</body>
+
+</html>
