@@ -21,7 +21,8 @@ both beautiful interface and functionally.
   4. After finishing all questions, user will be taken to a result page where they can choose to save their score
   or go back to the homepage.
 
-#ScreenShots
+# ScreenShots
+
 ![p1](https://user-images.githubusercontent.com/41966084/110424953-38ee6100-8069-11eb-8c86-ff59b118f9b6.PNG)
 
 ![p2](https://user-images.githubusercontent.com/41966084/110424955-3986f780-8069-11eb-8201-75a4ecb059de.PNG)
